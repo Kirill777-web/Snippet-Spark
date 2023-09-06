@@ -10,68 +10,73 @@
  <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<div class="carousel">
- <div class="cards">
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">HTML</div>
-   <div class="back">Back 1</div>
+<body>
+ <!-- Search bar, carousel, and jokes sections here -->
+ <div class="main-container">
+  <!-- Search bar -->
+  <div class="search-container">
+   <input type="text" id="search-input" placeholder="Type here: HTML, JS, CSS, GitHub, Fetch">
   </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">HTML</div>
-   <div class="back">Back 2</div>
+
+  <div class="carousel">
+   <div class="cards">
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">HTML</div>
+     <div class="back">Back 1</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">HTML</div>
+     <div class="back">Back 2</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 3</div>
+     <div class="back">Back 3</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 4</div>
+     <div class="back">Back 4</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 5</div>
+     <div class="back">Back 5</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 6</div>
+     <div class="back">Back 6</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 7</div>
+     <div class="back">Back 7</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 8</div>
+     <div class="back">Back 8</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 9</div>
+     <div class="back">Back 9</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 10</div>
+     <div class="back">Back 10</div>
+    </div>
+    <div class="card" onclick="flipCard(this)">
+     <div class="front">Front 11</div>
+     <div class="back">Back 11</div>
+    </div>
+   </div>
+   <div class="buttons-container">
+    <button class="prev" onclick="moveCards(-1)">Prev</button>
+    <button class="next" onclick="moveCards(1)">Next</button>
+   </div>
   </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 3</div>
-   <div class="back">Back 3</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 4</div>
-   <div class="back">Back 4</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 5</div>
-   <div class="back">Back 5</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 6</div>
-   <div class="back">Back 6</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 7</div>
-   <div class="back">Back 7</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 8</div>
-   <div class="back">Back 8</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 9</div>
-   <div class="back">Back 9</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 10</div>
-   <div class="back">Back 10</div>
-  </div>
-  <div class="card" onclick="flipCard(this)">
-   <div class="front">Front 11</div>
-   <div class="back">Back 11</div>
-  </div>
+  <!-- Jokes section -->
+  <section class="jokes">
+   <h2>Hello</h2>
+  </section>
  </div>
- <div class="buttons-container">
-  <button class="prev" onclick="moveCards(-1)">Prev</button>
-  <button class="next" onclick="moveCards(1)">Next</button>
- </div>
-</div>
-<!-- Jokes section -->
-<section class="jokes">
- <h2>Hello</h2>
-</section>
-
-
-
-
-<!-- Footer -->
-<script src="assets/app.js"></script>
+ <!-- Footer -->
+ <script src="assets/app.js"></script>
 </body>
 
 </html>
