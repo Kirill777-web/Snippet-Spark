@@ -122,3 +122,49 @@ body {
   padding-top: 50px;
   padding-right: 30px;
 }
+
+  .jokes{
+    background-color: rgb(249, 247, 244);
+    height: 10%;
+    width: 50%;
+    margin-left: 30em;
+    margin-right: 20em;
+    border-style: double;
+    border-top-left-radius: 5px;
+    box-shadow: 5px 5px 10px #7e5151;
+    border-style: double;
+  }
+
+  .jokes #textArea {
+    position:relative;
+    height: 35px;
+    padding: 0.80em;
+    background-color: #4f7a8e;
+    }
+
+    #randomJokes{
+      text-align: center;
+      margin-left: 25em;
+      margin-bottom: 3em;
+      border-radius: 5px;
+      margin-top:5px;
+      cursor: pointer;
+      background-color: #ab9999;
+      transition: background-color 0.3 ease, transform 0.3 ease;
+    }
+    #randomJokes:hover {
+      background-color: #4f7a8e;
+      transform: scale(1.2);
+    }
+
+    .footerMain{
+      position: absolute;
+      background-color: rgb(171, 100, 12);
+      height: 20%;
+      width: 100%;
+      margin-top: 80em;
+      border-style: double;
+      border-top-left-radius: 5px;
+      box-shadow: 5px 5px 10px #7e5151;
+      border-style: double;
+    }
