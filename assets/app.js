@@ -1,3 +1,5 @@
+// Get all the cards
+const cards = document.querySelectorAll('.card');
 // Card flipping function
 function flipCard(cardElement) {
   //Check if the card is flipped
@@ -49,3 +51,25 @@ function moveCards(direction) {
   //calculated position to the cards, creating the visual sliding effect.
   cardsContainer.style.transform = `translateX(${currentTranslateValue}px)`;
 }
+
+//Search the cards functionality
+document
+  .getElementById('search-input')
+  .addEventListener('keydown', function (event) {
+    if (event.keyCode === 13) {
+      // 13 is the key code for Enter
+      const query = event.target.value.toLowerCase(); // Convert to lowercase for case-insensitive search
+      // Iterate over each card
+      cards.forEach((card) => {
+        const frontText = card
+          .querySelector('.front')
+          .textContent.toLowerCase(); // Convert text to lowercase for case-insensitive search
+
+        if (frontText.includes(query)) {
+          card.style.display = ''; // Show the card if it matches
+        } else {
+          card.style.display = 'none'; // Hide the card if it doesn't match
+        }
+      });
+    }
+  });
