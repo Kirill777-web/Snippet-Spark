@@ -1,3 +1,14 @@
+
+:root {
+  --font-family:Arial,sans-serif;
+  --font-size:10px; 
+  --font-weight:400;
+}
+
+
+
+
+
 body {
   display: flex;
   justify-content: center;
@@ -46,6 +57,20 @@ body {
 #search-input:focus {
   box-shadow: 0 0 5px rgba(0, 120, 255, 0.5);
 }
+
+#search-Content {
+ padding: 10px 20px;
+ width: 300px;
+ border-radius: 5px;
+ border: 1px solid #ccc;
+ outline: none;
+ transition: box-shadow 0.3s;
+ margin-left: 13em;
+}
+#search {
+  padding: 0.7em;
+  margin-left: 5px;
+}
 .carousel {
   width: 1297px;
   height: 660px;
@@ -54,7 +79,7 @@ body {
   align-items: center;
   overflow: hidden;
   position: relative;
-  padding-top: 150px;
+  padding-top: 60px;
 }
 
 .cards {
@@ -119,52 +144,62 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-right: 30px;
 }
 
   .jokes{
+    display: flex;
+    position: relative;
     background-color: rgb(249, 247, 244);
-    height: 10%;
+    height: 13%;
     width: 50%;
-    margin-left: 30em;
-    margin-right: 20em;
     border-style: double;
     border-top-left-radius: 5px;
     box-shadow: 5px 5px 10px #7e5151;
     border-style: double;
+    margin-bottom: 1.4rem;
+ 
+  
   }
 
   .jokes #textArea {
-    position:relative;
-    height: 35px;
+    position:absolute;
+    width:78%;
+    height:34px;
     padding: 0.80em;
-    background-color: #4f7a8e;
+   border-style: double;
     }
 
     #randomJokes{
-      text-align: center;
-      margin-left: 25em;
-      margin-bottom: 3em;
+      position: absolute;
       border-radius: 5px;
-      margin-top:5px;
       cursor: pointer;
-      background-color: #ab9999;
-      transition: background-color 0.3 ease, transform 0.3 ease;
+      padding: 0.7em;
+      margin-left: 45em;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    
     }
     #randomJokes:hover {
       background-color: #4f7a8e;
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
-
+    
     .footerMain{
       position: absolute;
-      background-color: rgb(171, 100, 12);
-      height: 20%;
+      background-color: #c6b3b3;
+      height: 14px;
       width: 100%;
-      margin-top: 80em;
-      border-style: double;
-      border-top-left-radius: 5px;
-      box-shadow: 5px 5px 10px #7e5151;
-      border-style: double;
+      margin-top: 45em;
+      padding: 1.2em;
+      border-top: 1px solid rgb(191, 128, 128);
+      
+    }
+    .footerMain #label {
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+      margin-top: 12px;
+      overflow: hidden;
     }
