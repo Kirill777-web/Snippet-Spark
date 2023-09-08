@@ -49,3 +49,40 @@ function moveCards(direction) {
   //calculated position to the cards, creating the visual sliding effect.
   cardsContainer.style.transform = `translateX(${currentTranslateValue}px)`;
 }
+
+
+const searchElement = document.getElementById('search-Content');
+console.log(searchElement);
+
+//Event listeners for enter key press
+searchElement.addEventListener('keydown', function(event) {
+if (event.key === 'Enter') {
+  // console.log("Entered",event.key);
+
+  searchUrl();
+}
+});
+
+var Api_Key = '4f8c73fbdac6c1508beb1bf8d9059a64';
+
+//search API 
+function searchUrl() {
+  var searchText = searchElement.value.trim();
+// console.log(searchText);
+const googleUrl = 'http://api.serpstack.com/search?access_key=' + Api_Key + '&query=' + searchText
+console.log(googleUrl);
+fetch (googleUrl)
+.then((res) => {
+    if(!res.ok){
+      return res.json().then((body) => {
+        throw new Error('Search API error');
+      });
+    }
+    return res.json();
+})
+.then((data) => {
+console.log(data);
+
+});
+
+}
