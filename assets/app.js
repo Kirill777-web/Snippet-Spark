@@ -63,7 +63,7 @@ if (event.key === 'Enter') {
 }
 });
 
-var Api_Key = '4f8c73fbdac6c1508beb1bf8d9059a64';
+
 
 //search API 
 function searchUrl() {
