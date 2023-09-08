@@ -1,5 +1,10 @@
 // Get all the cards
 const cards = document.querySelectorAll('.card');
+//Api For jokes
+const url = 'https://icanhazdadjoke.com/';
+//Elements for the joke
+const btn = document.querySelector('#randomJokes');
+const result = document.querySelector('#textArea');
 // Card flipping function
 function flipCard(cardElement) {
   //Check if the card is flipped
@@ -73,3 +78,29 @@ document
       });
     }
   });
+
+//Random joke functionality
+btn.addEventListener('click', () => {
+  fetchDadJoke();
+});
+
+const fetchDadJoke = async () => {
+  result.textContent = 'Loading...';
+  try {
+    const response = await fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'bootcamp project',
+      },
+    });
+    if (!response.ok) {
+      throw new Error(' error');
+    }
+    const data = await response.json();
+
+    result.textContent = data.joke;
+  } catch (error) {
+    console.log(error.message);
+    result.textContent = 'There was an error...';
+  }
+};
