@@ -52,12 +52,11 @@ function moveCards(direction) {
 
 
 const searchElement = document.getElementById('search-Content');
-console.log(searchElement);
 
 //Event listeners for enter key press
 searchElement.addEventListener('keydown', function(event) {
 if (event.key === 'Enter') {
-  // console.log("Entered",event.key);
+  console.log("Entered",event.key);
 
   searchUrl();
 }
