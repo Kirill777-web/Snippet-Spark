@@ -1,9 +1,12 @@
-:root {
+:root{
   --font-family:Arial,sans-serif;
   --font-size:10px;
   --font-weight:400;
 }
+html {
+padding: 0;
 
+}
 body {
   /* display: flex;
   justify-content: center;
@@ -13,6 +16,8 @@ body {
   background-color: #F3F4F6;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
+  padding:0;
 }
 /* styles for the container */
 .main-container {
@@ -166,12 +171,15 @@ body {
       background-color: #216D90;
       transform: scale(1.1);
     }
-    .footerMain{
-      position: relative;
-      background-color: #C6B7B7;
-      height: 160px;
+    .footerMain {
+      margin-top: auto;
+      background-color:#E9ECEF;
       width: 100%;
-      border-top: 1px solid rgb(191, 128, 128);
+      text-align: center;
+      padding: 45px;
+      box-sizing: border-box;
+      font-size: 13px;
+      font-weight: 400;
     }
     .footerMain #label {
       display: flex;
@@ -181,6 +189,10 @@ body {
     }
     #contributors {
       margin-bottom: 10px;
-      background-color: #E2EEF4;
+    }
+    #contributors a {
+      text-decoration: none;
+      color: #333;
+    margin: 5px;
     }
 
