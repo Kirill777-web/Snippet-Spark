@@ -1,9 +1,9 @@
-
 :root {
   --font-family:Arial,sans-serif;
   --font-size:10px;
   --font-weight:400;
 }
+
 body {
   /* display: flex;
   justify-content: center;
@@ -38,6 +38,7 @@ body {
   background-color: #E9ECEF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 #search-input {
   padding: 10px 20px;
  width: 300px;
@@ -47,6 +48,7 @@ body {
  transition: box-shadow 0.3s;
  margin-left: 13em;
 }
+
 #search-input:focus {
   box-shadow: 0 0 5px rgba(81, 115, 153, 0.5);
 }
@@ -63,9 +65,12 @@ body {
   padding: 0.7em;
   margin-left: 5px;
 }
+
+
 .carousel {
   width: 1280px;
   height: 550px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,10 +142,12 @@ body {
   display: flex;
   align-items: left;
   height:6vh;
+
   width: 78%;
   background-color: #555;
   border-radius: 5px;
   margin-top: 20px;
+
   }
   .jokes #textArea {
     position: relative;
@@ -176,3 +183,4 @@ body {
       margin-bottom: 10px;
       background-color: #E2EEF4;
     }
+
