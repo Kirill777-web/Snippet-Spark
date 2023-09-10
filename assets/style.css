@@ -126,6 +126,18 @@ body {
   transform: rotateY(180deg);
   background-color: var(--background-colorcards-clickbutton);
 }
+.back {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  align-items: center; /* Center-align text and code */
+  padding: 10px; /* Add padding inside the back of the card */
+  background-color: rgb(87, 79, 79);
+}
+.back pre,
+p {
+  color: white;
+}
 .prev,
 .next {
   width: 100px;
