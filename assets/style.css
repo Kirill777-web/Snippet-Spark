@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@300&family=Cormorant+Garamond:wght@700&family=Mukta&family=Nunito+Sans:opsz,wght@6..12,200&family=Oswald:wght@200&family=Prompt:wght@300&family=Proza+Libre&family=Zilla+Slab:wght@300&display=swap');
+
+
 :root{
-  --font-family:Arial,sans-serif;
+  --font-family:'Mukta', sans-serif;
   --font-size:10px;
   --font-weight:400;
+  --background-colorfooter: rgb(53, 51, 51);
+  --background-colorcards-clickbutton: rgb(38, 90, 152);
 }
 html {
 padding: 0;
@@ -27,6 +32,7 @@ body {
   width: 100vw;
   height: 80vh;
   position: relative; /* This makes sure the jokes section can be positioned relative to this container */
+  font-family: var(--font-family);
 }
 .jokes {
   position: absolute;
@@ -55,7 +61,7 @@ body {
 }
 
 #search-input:focus {
-  box-shadow: 0 0 5px rgba(81, 115, 153, 0.5);
+  box-shadow: 0 0 5px var(--background-colorcards-clickbutton);
 }
 #search-Content {
  padding: 10px 20px;
@@ -114,16 +120,18 @@ body {
   backface-visibility: hidden;
   border: 1px solid black;
   border-radius: 10px;
+
 }
 .card .back {
   transform: rotateY(180deg);
+  background-color: var(--background-colorcards-clickbutton);
 }
 .prev,
 .next {
   width: 100px;
   height: 40px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--background-colorfooter);
+  color:white;
   border: none;
   cursor: pointer;
   margin: 10px;
@@ -133,7 +141,7 @@ body {
 }
 .prev:hover,
 .next:hover {
-  background-color: #555;
+  background-color: var(--background-colorcards-clickbutton) !important;
 }
 .buttons-container {
   display: flex;
@@ -168,12 +176,12 @@ body {
       padding-right: 1.3em;
     }
     #randomJokes:hover {
-      background-color: #216D90;
+      background-color: var(--background-colorcards-clickbutton);
       transform: scale(1.1);
     }
     .footerMain {
       margin-top: auto;
-      background-color:#E9ECEF;
+      background-color:var(--background-colorfooter);
       width: 100%;
       text-align: center;
       padding: 45px;
@@ -186,13 +194,19 @@ body {
       justify-content: center;
       font-size: 13px;
       font-weight: 400;
+      padding-top: 35px;
+    }
+    #label{
+      color: white !important;
     }
     #contributors {
       margin-bottom: 10px;
+      color: white;
+
     }
     #contributors a {
       text-decoration: none;
-      color: #333;
+      color: #fffefe;
     margin: 5px;
     }
 
