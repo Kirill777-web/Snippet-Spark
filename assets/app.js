@@ -63,6 +63,10 @@ document
   .addEventListener('keydown', function (event) {
     if (event.keyCode === 13) {
       // 13 is the key code for Enter
+      //clear the content of random number data and random jokes section
+      traviaElement.textContent ="";
+      result.textContent = "";
+
       const query = event.target.value.toLowerCase(); // Convert to lowercase for case-insensitive search
       // Iterate over each card
       cards.forEach((card) => {
@@ -84,6 +88,7 @@ btn.addEventListener('click', () => {
   fetchDadJoke();
 });
 
+
 const fetchDadJoke = async () => {
   result.textContent = 'Loading...';
   try {
@@ -97,10 +102,29 @@ const fetchDadJoke = async () => {
       throw new Error(' error');
     }
     const data = await response.json();
-
     result.textContent = data.joke;
   } catch (error) {
     console.log(error.message);
     result.textContent = 'There was an error...';
   }
 };
+
+//Generating random number facts api
+const apiUrl = "http://numbersapi.com/random/trivia";
+const traviaElement = document.getElementById('numberTrivia');
+const clickEvent = document.querySelector('.fetch-button');
+// console.log(clickEvent);
+// console.log(traviaElement);
+
+//fetching api
+clickEvent.addEventListener('click', function(event) {
+  event.preventDefault();
+fetch(apiUrl)
+.then((response) => response.text())
+.then((data) => {
+  traviaElement.textContent = data;
+}) 
+.catch((error) => {
+  console.log("Error fetching the numberTrivia", error);
+});
+});
