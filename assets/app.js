@@ -110,7 +110,7 @@ const fetchDadJoke = async () => {
 };
 
 //Generating random number facts api
-const apiUrl = "http://numbersapi.com/random/trivia";
+const apiUrl = "https://cors-anywhere.herokuapp.com/http://numbersapi.com/random/trivia";
 const traviaElement = document.getElementById('numberTrivia');
 const clickEvent = document.querySelector('.fetch-button');
 // console.log(clickEvent);
