@@ -15,81 +15,196 @@
  <div class="main-container">
   <!-- Search bar -->
   <div class="search-container">
-   <input type="text" id="search-input" placeholder="Type here: HTML, JS, CSS, GitHub, Fetch">
-    <input type="text" id="search-Content" placeholder="Google Search:">
-    <button type="button" id="search">Search</button>
+    <input type="text" id="search-input" placeholder="Type here: HTML, JS, CSS, GitHub, Fetch">
   </div>
   <div class="carousel">
-   <div class="cards">
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">HTML: Title Tooltip</div>
-     <div class="back"> <p>To create an HTML tooltip, you can use the "title" attribute in HTML tags or create a custom
-      tooltip using CSS and
-      JavaScript.</p>
-    <pre>
+    <div class="cards">
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">HTML: Title Tooltip</div>
+        <div class="back">
+          <p>To create an HTML tooltip, you can use the "title" attribute in HTML tags or create a custom
+            tooltip using CSS and
+            JavaScript.</p>
+          <pre>
 &lt;html&gt;
 &lt;head&gt;
-  &lt;title&gt;Tooltip Example&lt;/title&gt;
+&lt;title&gt;Tooltip Example&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;This is a &lt;span title="Hello, I'm a
-  tooltip"&gt;tooltip&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;This is a &lt;span title="Hello, I'm a
+tooltip"&gt;tooltip&lt;/span&gt;.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-        </pre>
-  </div> 
+      </pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">HTML: Embedding a video</div>
+        <div class="back">
+          <p>Embedding a video in HTML allows you to display video content directly within your web page. Here's a
+            description
+            of how to embed a video using HTML:</p>
+          <pre>
+<code>
+&lt;video controls width="320" height="240"&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+ </code>
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">HTML: Embedding an audio</div>
+        <div class="back">
+          <p>Embedding audio and video files on a webpage allows you to enrich the content and engage your audience
+            with multimedia.</p>
+          <pre>
+<code>
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+              </code>
+            </pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">CSS: keyframes animations</div>
+        <div class="back">
+          <p>CSS keyframes animations allow you to create complex animations by defining keyframes at specific points
+            in time. In
+            this example, we've defined an animation named bounce that moves an element up and down.</p>
+          <pre>
+@keyframes bounce {
+0%, 100% {
+  transform: translateY(0);
+  }
+  50% {
+  transform: translateY(-30px);
+  }
+}
+  </pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">CSS: 3D rotation effect to an <br> element when hovered</div>
+        <div class="back">
+          <p>This code demonstrates how to apply a 3D rotation effect to an element when hovered, creating a flip
+            animation. You can
+            use this code to display 3D CSS effects on your web page.</p>
+          <pre>
+.element {
+transform: perspective(1000px)
+rotateY(45deg);
+transition: transform 0.5s;
+}
+.element:hover {
+transform: perspective(1000px)
+rotateY(180deg);
+}
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">CSS: Linear Gradient & Radial Gradient</div>
+        <div class="back">
+          <p>Linear Gradient: The linear-gradient function creates a gradient that transitions from one color to
+            another in a linear
+            direction.Radial Gradient: The radial-gradient function creates a circular gradient that transitions from
+            one color to another. </p>
+          <pre>
+/* Linear Gradient */
+.background {
+background: linear-gradient
+(to right, #FFCC00, #FF3300);
+}
+/* Radial Gradient */
+.background {
+background: radial-gradient
+(circle, #33CC33, #FF9900);
+}
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">Git: git-blame</div>
+        <div class="back">
+          <p>git-blame - Show what revision and author last modified each line of a file.</p>
+          <pre>
+For example, the line indicates that
+the line var shoe = "Nike Air Max";
+was last modified by -
+^81f5ce9 (John Doe 2023-07-01
+10:30:45 +0300 1) var shoe = "Nike Air Max";
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">Git: Log</div>
+        <div class="back">
+          <p>Shows the commit logs.
+            List commits that are reachable by following the parent links from the given commit(s), but exclude
+            commits that are
+            reachable from the one(s) given with a ^ in front of them. The output is given in reverse chronological
+            order by
+            default.</p>
+          <pre>
+e7a2b1c -Jane Smith - Updated shoe price
+81f5ce9 -John Doe - Initial shoe details
+fd82a17 -Bob Johnson - Added isNewArrival flag
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">Git: git diff</div>
+        <div class="back">
+          <p>The git diff command is used to display the differences between two commits or between the working
+            directory and the
+            last commit.
+            In the example, changes between two commits are shown. Lines prefixed with '-' indicate deletions, while
+            lines prefixed
+            with '+' indicate additions. This format provides a clear visual representation of code changes.</p>
+          <pre>
+git diff
+Example:
+-Lines prefixed with '-' are deletions.
+-Lines prefixed with '+' are additions.
+-Changes between the two commits are displayed.
+</pre>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="front">Fetch: fetch()</div>
+        <div class="back">
+          <p>The fetch() function is used in JavaScript to make network requests and retrieve data from a
+            specified URL. It returns a
+            Promise that resolves to the Response object representing the response to the request.</p>
+          <pre>
+fetch() Function
+Example:
+```javascript
+fetch('https://api.example.com/data')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error =>
+console.error('Error:', error));
+</pre>
+        </div>
+      </div>
     </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">HTML</div>
-     <div class="back">Back 2</div>
+    <div class="buttons-container">
+      <button class="prev" onclick="moveCards(-1)">Prev</button>
+      <button class="next" onclick="moveCards(1)">Next</button>
     </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 3</div>
-     <div class="back">Back 3</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 4</div>
-     <div class="back">Back 4</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 5</div>
-     <div class="back">Back 5</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 6</div>
-     <div class="back">Back 6</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 7</div>
-     <div class="back">Back 7</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 8</div>
-     <div class="back">Back 8</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 9</div>
-     <div class="back">Back 9</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 10</div>
-     <div class="back">Back 10</div>
-    </div>
-    <div class="card" onclick="flipCard(this)">
-     <div class="front">Front 11</div>
-     <div class="back">Back 11</div>
-    </div>
-   </div>
-   <div class="buttons-container">
-    <button class="prev" onclick="moveCards(-1)">Prev</button>
-    <button class="next" onclick="moveCards(1)">Next</button>
-   </div>
+  </div>
+  <div class="container">
+    <button class="fetch-button" id="fetchNumber">Random number facts</button>
+    <p class="trivia-text" id="numberTrivia"></p>
   </div>
   <section class="jokes">
     <div id="textArea"></div>
     <button type="button" id="randomJokes">Random Jokes</button>
-</section>
- </div>
+  </section>
+</div>
 <footer class="footerMain">
     <div id="contributors">
         <h2>
