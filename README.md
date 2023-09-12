@@ -33,7 +33,6 @@ N/A
 - [Random Number Trivia API](http://numbersapi.com/random/trivia)
 - [Demo of CORS Anywhere  API](https://cors-anywhere.herokuapp.com/corsdemo)
 - [Random Jokes API](https://icanhazdadjoke.com/api)
-Give credit to any resources or tools you used in this project.
 ## Contributors
 - [Kirill Lazutin](https://github.com/Kirill777-web)
 - [Sabin Thapa](https://github.com/Sabinkthapa)
