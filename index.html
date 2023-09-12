@@ -9,20 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Icon to the page -->
   <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon-16x16.png">
+  <!-- style -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
   <!-- Search bar, carousel, and jokes sections here -->
-  <div class="main-container">
+  <main class="main-container">
     <!-- Search bar -->
-    <div class="search-container">
+    <hero class="search-container">
 
       <input type="text" id="search-input" placeholder="Type here: HTML, JS, CSS, GitHub, Fetch">
 
-    </div>
-    <div class="carousel">
-      <div class="cards">
+    </hero>
+    <!-- carousel-->
+    <section class="carousel">
+      <!-- cards -->
+      <section class="cards">
         <div class="card" onclick="flipCard(this)">
           <div class="front">HTML: Title Tooltip</div>
           <div class="back">
@@ -194,32 +197,37 @@ console.error('Error:', error));
 </pre>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- buttons -->
       <div class="buttons-container">
         <button class="prev" onclick="moveCards(-1)">Prev</button>
         <button class="next" onclick="moveCards(1)">Next</button>
       </div>
-    </div>
-    <div class="container">
+    </section>
+    <!-- random number trivia -->
+    <section class="container">
       <button class="fetch-button" id="fetchNumber">Random number facts</button>
       <p class="trivia-text" id="numberTrivia"></p>
-    </div>
+    </section>
+    <!-- random jokes -->
     <section class="jokes">
       <div id="textArea"></div>
       <button type="button" id="randomJokes">Random Jokes</button>
     </section>
-  </div>
+  </main>
+  <!-- footer -->
   <footer class="footerMain">
-    <div id="contributors">
+    <section id="contributors">
       <h2>
         CONTRIBUTORS
       </h2>
       <a href="https://github.com/Kirill777-web" target="_blank">Kirill Lazutin </a>
       <a href="https://github.com/Sabinkthapa" target="_blank"> Sabin Thapa</a>
       <a href="https://github.com/Carlobelle" target="_blank">Carlovsky Bellefleur </a>
-    </div>
+    </section>
     <small id="label">Copyright 2023 Snippet-Spark Archives.All Rights Reserved</small>
   </footer>
+  <!-- script -->
   <script src="assets/app.js"></script>
 </body>
 
