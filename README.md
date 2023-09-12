@@ -22,7 +22,7 @@ N/A
 - [Repository](https://github.com/Kirill777-web/Snippet-Spark)
 
 - The following screenshots show the application final output:
-  ![Snippet-Spark app]()
+  ![Snippet-Spark app](/assets/SnippetSpark.png)
 
 
 
