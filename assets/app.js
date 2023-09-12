@@ -108,7 +108,7 @@ const fetchDadJoke = async () => {
     result.textContent = 'There was an error...';
   }
 };
-
+// https://cors-anywhere.herokuapp.com/corsdemo -Don't forget to click on this server
 //Generating random number facts api
 const apiUrl = "https://cors-anywhere.herokuapp.com/http://numbersapi.com/random/trivia";
 const traviaElement = document.getElementById('numberTrivia');
@@ -128,3 +128,11 @@ fetch(apiUrl)
   console.log("Error fetching the numberTrivia", error);
 });
 });
+
+// Displaying saved Trivia data when the page loads
+window.onload = () => {
+  const savedTrivia = localStorage.getItem('lastTrivia');
+  if (savedTrivia) {
+    traviaElement.textContent = savedTrivia;
+  }
+};
