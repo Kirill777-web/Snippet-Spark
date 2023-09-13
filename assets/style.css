@@ -130,6 +130,9 @@ body {
 p {
   color: white;
 }
+.back code {
+  color: white;
+}
 .prev,
 .next {
   width: 100px;
